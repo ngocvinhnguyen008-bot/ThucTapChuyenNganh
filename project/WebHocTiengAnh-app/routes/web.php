@@ -6,7 +6,9 @@ use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ERDiagramController;
 use App\Http\Controllers\Admin\JoinController;
+use App\Http\Controllers\Admin\CustomerController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Routing\Router;
 
 Route::get('/', function () {
     return view('index');
@@ -112,4 +114,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('teachers/{id}/edit', [UserManagementController::class, 'editTeacher'])->name('teachers.edit');
     Route::put('teachers/{id}', [UserManagementController::class, 'updateTeacher'])->name('teachers.update');
     Route::delete('teachers/{id}', [UserManagementController::class, 'destroyTeacher'])->name('teachers.destroy');
-});
+    
+    // Customer Management (Admin)
+    Route::get('customer', [CustomerController::class, 'index'])->name('admin.customer');
+}); 
+  

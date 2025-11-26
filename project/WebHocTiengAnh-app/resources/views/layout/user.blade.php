@@ -182,19 +182,19 @@
                             <ul>
                                 <li class="active"><a href="{{ route('home') }}">Trang Chủ</a></li>
                                 <li class="has-dropdown">
-                                    <a href="{{ route('men') }}">IELTS</a>
+                                    <a href="{{ route('home') }}">IELTS</a>
                                     <ul class="dropdown">
-                                        <li><a href="{{ route('product') }}">Chi Tiết Khóa Học</a></li>
-                                        <li><a href="{{ route('cart') }}">Bài Tập Đã Lưu</a></li>
-                                        <li><a href="{{ route('checkout') }}">Thanh Toán Học Phí</a></li>
-                                        <li><a href="{{ route('order') }}">Lịch Sử Đăng Ký</a></li>
-                                        <li><a href="{{ route('add_to_wishlist') }}">Khóa Học Yêu Thích</a></li>
+                                        <li><a href="{{ route('home') }}">Chi Tiết Khóa Học</a></li>
+                                        <li><a href="{{ route('my-courses') }}">Bài Tập Đã Lưu</a></li>
+                                        <li><a href="{{ route('home') }}">Thanh Toán Học Phí</a></li>
+                                        <li><a href="{{ route('home') }}">Lịch Sử Đăng Ký</a></li>
+                                        <li><a href="{{ route('my-courses') }}">Khóa Học Yêu Thích</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="{{ route('women') }}">TOEIC</a></li>
-                                <li><a href="{{ route('about') }}">Về Chúng Tôi</a></li>
-                                <li><a href="{{ route('contact') }}">Liên Hệ</a></li>
-                                <li class="cart"><a href="{{ route('cart') }}"><i class="icon-book-open"></i>
+                                <li><a href="{{ route('home') }}">TOEIC</a></li>
+                                <li><a href="{{ route('home') }}">Về Chúng Tôi</a></li>
+                                <li><a href="{{ route('home') }}">Liên Hệ</a></li>
+                                <li class="cart"><a href="{{ route('my-courses') }}"><i class="icon-book-open"></i>
                                         Tiến Độ
                                         [0]</a></li>
                             </ul>

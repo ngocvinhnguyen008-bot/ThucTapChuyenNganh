@@ -19,6 +19,7 @@ class CategoryController extends Controller
     {
         return view('admin.product.product-add');
     }
+    
 
     public function store(Request $request)
     {

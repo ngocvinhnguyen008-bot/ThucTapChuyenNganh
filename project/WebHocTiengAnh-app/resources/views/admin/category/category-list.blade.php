@@ -8,6 +8,7 @@
                 <i class="fas fa-plus fa-sm text-white-50"></i> Thêm Khóa Học Mới
             </a>
         </div>
+        
 
         <!-- DataTables Card -->
         <div class="card shadow mb-4">
@@ -61,9 +62,9 @@
                                 </tr>
                             @endforeach
                         </tbody>
-                    </table>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-@endsection
+    @endsection

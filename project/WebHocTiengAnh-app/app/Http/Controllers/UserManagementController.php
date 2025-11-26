@@ -16,7 +16,7 @@ class UserManagementController extends Controller
         $students = Student::with('user')->get();
         $teachers = Teacher::with('user')->get();
 
-        return view('admin.product.user-management', [
+        return view('admin.product.customer-management', [
             'students' => $students,
             'teachers' => $teachers,
             'totalStudents' => $students->count(),

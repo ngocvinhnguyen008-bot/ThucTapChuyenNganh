@@ -68,7 +68,7 @@
                     <a class="collapse-item" href="login.html">Đăng nhập</a>
                     <a class="collapse-item" href="{{ route('admin.categories') }}">Quản Lý Khóa Học</a>
                     <a class="collapse-item" href="{{ route('admin.products.create') }}">Thêm Khóa Học</a>
-                    <a class="collapse-item" href="{{ route('admin.users') }}">Quản Lý Người Dùng</a>
+                    <a class="collapse-item" href="{{ route('admin.customer') }}">Quản Lý Người Dùng</a>
                     <a class="collapse-item" href="register.html">Đăng ký</a>
                     <a class="collapse-item" href="forgot-password.html">Quên mật khẩu</a>
                     <div class="collapse-divider"></div>
@@ -76,13 +76,13 @@
                 </div>
             </div>
         </li>
-
-        <!-- Nav Item - Charts -->
+       
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Báo cáo</span></a>
-        </li>
+    <a class="nav-link" href="{{ route('admin.customer') }}">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Customer</span>
+    </a>
+</li>
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
